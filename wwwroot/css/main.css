@@ -1,0 +1,35 @@
+﻿body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:lemonchiffon;
+}
+
+h1{
+    font-size:100px;
+    color:navy;
+    text-align:center;
+}
+
+img{
+    display:inherit;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:50px;
+    height:80%;
+}
+
+label{
+    width:10%;
+    display:inline-block;
+    margin-bottom:1%;
+    margin-left:1%;
+}
+
+p{
+    width:80%;
+    margin-left: 1%;
+}
+
+/*Class Designed to move over the submit button in the HTML form*/
+.moveOver {
+    margin-left: 9%;
+}

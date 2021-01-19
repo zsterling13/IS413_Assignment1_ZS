@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<!--Zachary Sterling
+Group 3, Section 4
+Description: Website for IS 413 Assignment 1. Includes an icon, title, paragraph about what I want out of the class, top 3 jobs I am interested in,
+and a grade calculator for the class.
+    -->
+<head>
+    <meta charset="utf-8" />
+    <title>Intro to Zach</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="icon" href="img/gunicorn.png" />
+</head>
+<body>
+    <!--Header that includes my prefered name: I think header means any of the h1,h2,h3, etc. tags-->
+    <h1>Zach</h1>
+    <br />
+
+    <!--Picture of me boating-->
+    <img src="img/Zach_S_Boating.jpg" />
+    <br />
+
+    <h3>What I hope to get out of IS 413</h3>
+    <p>
+        So far IS 413 has copied a lot of content from IS 403, mainly the overall structure of a professional website.
+        I hope to learn more about incorporating features that make a website feel professional and usable: interactiveness,
+        strong back-end support to store and process data, and further advice on how to successfuly structure a functioning website.
+        There is a lot I have not learned about web development, so I am excited to learn a lot from this class.
+        I understand that the course will be challenging, but I hope that it is not exceedingly daunting, meaning what is expected
+        from students it attainable with a bit of stretching present. Although I hope to gain great skills in web development from this class
+        I also understand that the point of a class is to not only teach content but to also excite students about the subject. I would
+        like to be more excited about web development and participating in the magic that is the Internet.
+    </p>
+    <br />
+
+    <h3>Top 3 Jobs I am currently interested in</h3>
+    <ol>
+        <li>Cybersecurity Manager</li>
+        <li>Software Developer</li>
+        <li>Video Game Designer</li>
+    </ol>
+    <br />
+    <!--Grade Calculator HTML Form that runs through a javascript file called calcGrade.js . Each grade type is weighted in the formula. An alert appears
+        at the end.-->
+    <h3>Grade Calculator</h3>
+    <form>
+        <label>Assignments</label>
+        <input id="assignments"/>
+        <br />
+
+        <label>Group Project</label>
+        <input id="groupProj" />
+        <br />
+
+        <label>Quizzes</label>
+        <input id="quizzes" />
+        <br />
+
+        <label>Exams</label>
+        <input id="exams" />
+        <br />
+
+        <label>INTEX</label>
+        <input id="intex" />
+        <br />
+
+        <input type="submit" value="Calculate Grade" id="calcGrade" class="moveOver"/>
+    </form>
+
+    <!--link to Javascript file for Grade Calculation HTML Form-->
+    <script src="js/calcGrade.js"></script>
+</body>
+</html>
