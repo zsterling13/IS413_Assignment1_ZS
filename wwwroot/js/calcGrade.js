@@ -1,14 +1,16 @@
 ﻿//Declare variables
 var o_submit = document.getElementById("calcGrade");
 
+
 //Event listener that operates once the submit button on the HTML form is pressed.
 o_submit.addEventListener("click", function () {
+
     //Gather values from form
-    i_assignments = document.getElementById("assignments").value;
-    i_groupProj = document.getElementById("groupProj").value;
-    i_quizzes = document.getElementById("quizzes").value;
-    i_exams = document.getElementById("exams").value;
-    i_intex = document.getElementById("intex").value;
+    var i_assignments = document.getElementById("assignments").value;
+    var i_groupProj = document.getElementById("groupProj").value;
+    var i_quizzes = document.getElementById("quizzes").value;
+    var i_exams = document.getElementById("exams").value;
+    var i_intex = document.getElementById("intex").value;
 
     //Calculate final grade percentage
     i_finalGrade = Number((i_assignments * 0.5) + (i_groupProj * 0.1) + (i_quizzes * 0.1) + (i_exams * 0.2) + (i_intex * 0.1)).toFixed(2);
