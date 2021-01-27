@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<!--Default Title Name-->
+
+<!--Zachary Sterling
+Group 3, Section 4
+Description: Website for IS 413 Assignment 2. Builds on IS 413 Assignment 1, adding an MVC structure to the website, the jquery library, a shared
+    layout between all webpages, navigation links for the website, and input validation for the Grade Calculator -->
+
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!--Title name is determined by each individual page-->
+    <title>@ViewBag.Title</title>
+
+    <!--Linked Stylesheets-->
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link rel="icon" href="~/img/gunicorn.png" />
+</head>
+
+<body>
+
+    <header>
+        <!--Navigation links for the website.-->
+        <menu>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="CalcGrade">Grade Calculator</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <!--Header that informs the user which page they are currently on-->
+    <h2>Page: @ViewBag.Title</h2><br />
+
+    <!--Render tag for razor code that dynamically adds the content of each page in addition to the navigation links, the footer, and
+        other links to a CSS stylesheet and a jquery library.-->
+
+    @RenderBody()
+
+    <center>
+        <footer>Zachary Sterling Learning Development &copy;</footer>
+    </center>
+
+    <!--link to Javascript jquery library and Grade Calculator logic-->
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/calcGrade.js"></script>
+</body>
+</html>

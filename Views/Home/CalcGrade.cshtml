@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Grade Calculator";
+
+}
+
+@model IS413_Assignment1_ZS.Models.CalcGradeModel
+
+
+<body>
+    
+    <!--Grade Calculator Instructions and form-->
+    <p>Enter, out of 100%, the percentage earned for each grade section below.</p><br />
+    <form method="post">
+        <label>Assignments</label>
+        <input id="assignments" asp-for="assignments" />
+        <br />
+
+        <label>Group Project</label>
+        <input id="groupProj" asp-for="groupProj" />
+        <br />
+
+        <label>Quizzes</label>
+        <input id="quizzes" asp-for="quizzes" />
+        <br />
+
+        <label>Exams</label>
+        <input id="exams" asp-for="exams" />
+        <br />
+
+        <label>INTEX</label>
+        <input id="intex" asp-for="intex" />
+        <br />
+
+        <input type="submit" value="Calculate Grade" id="calcGrade" class="moveOver" />
+
+        <!--Lists all received error messages that come from the model-->
+        <div asp-validation-summary="All"></div>
+    </form>
+</body>
