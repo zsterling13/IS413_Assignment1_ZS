@@ -1,8 +1,4 @@
-﻿//Assign button object to a variable
-var o_submit = $("#calcGrade");
-
-
-//Event listener that operates once the submit button on the HTML form is pressed.
+﻿//Event listener that operates once the submit button on the HTML form is pressed.
 $("#calcGrade").click( function () {
 
     //Gather values from form
